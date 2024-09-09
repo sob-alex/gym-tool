@@ -10,7 +10,7 @@ function Left() {
 }
 
 function Header() {
-	return <Toolbar start={Left} />;
+	return <Toolbar className='shadow-1 bg-white' start={Left} />;
 }
 
 export default Header;

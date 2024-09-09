@@ -1,8 +1,8 @@
 import { PrimeReactProvider } from 'primereact/api';
-import { Button } from 'primereact/button';
 import { config } from './primeConfig';
 import { Header } from './components/Header';
 import { Container } from './components/Container';
+import Dashboard from './pages/Dashboard/Dashboard';
 
 function App() {
 	return (
@@ -10,7 +10,7 @@ function App() {
 			<div>
 				<Header />
 				<Container>
-					<Button label="Submit" />
+					<Dashboard />
 				</Container>
 			</div>
 		</PrimeReactProvider>
