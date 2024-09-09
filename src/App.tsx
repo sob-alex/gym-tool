@@ -1,8 +1,11 @@
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { PrimeReactProvider } from 'primereact/api';
 import { config } from './primeConfig';
 import { Header } from './components/Header';
 import { Container } from './components/Container';
-import Dashboard from './pages/Dashboard/Dashboard';
+import { routes } from './routes';
+
+const router = createBrowserRouter(routes);
 
 function App() {
 	return (
@@ -10,7 +13,7 @@ function App() {
 			<div>
 				<Header />
 				<Container>
-					<Dashboard />
+					<RouterProvider router={router} />
 				</Container>
 			</div>
 		</PrimeReactProvider>
