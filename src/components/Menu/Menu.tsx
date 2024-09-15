@@ -43,7 +43,7 @@ function Header() {
 					icon: 'pi pi-plus',
 					shortcut: 'Ctrl+N',
 					template: itemRenderer,
-					url: ROUTE_PATHS.TRAINING_LOG
+					url: ROUTE_PATHS.ADD_WORKOUT
 				},
 				{
 					label: 'Дневник',
